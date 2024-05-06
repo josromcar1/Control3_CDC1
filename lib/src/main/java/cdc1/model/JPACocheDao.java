@@ -34,10 +34,11 @@ public class JPACocheDao implements Dao<Coche>{
 			
 			coche = it.next();
 			
-			if(coche.getId() == key) {
+			if((coche.getId()) == key) {
+				cocheBuscado=coche;
 				break;
 			}
-			cocheBuscado=coche;
+			
 		}
 		
 		
